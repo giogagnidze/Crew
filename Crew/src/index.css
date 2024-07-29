@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    background-color: #202020;
+
+}
+b{
+    color: #9900ff;
+}
+
+.bold{
+    color: #9900ff;
+    text-shadow:
+    0 0 10px #9900ff,
+    0 0 20px #9900ff,
+    0 0 60px #9900ff;
+}
+header{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    opacity: 92%;
+}
+.navbar-nav{
+    align-items: center;
+    gap: 20px;
+}
+.nav-link a{
+    color: white;
+    transition: 0.4s;
+}
+.nav-link a:hover{
+    color: #9900ff;
+    transform: scale(1.05);
+}
+
+.logo1{
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 160%;
+    color: #FFFFFF;
+    display: flex;
+    text-decoration-line: none;
+}
+.img-div img{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+@media (min-width: 576px){
+    .img-div img{
+        position: absolute;
+        top: -100px;
+    }
+}
+@media (max-width: 992px){
+    .img-div img{
+        width: 300px;
+        height: 300px;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 575px){
+    .img-div img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+@media (max-width: 336px){
+    .logo1{
+        font-size: 20px;
+    }
+}
+
+
+.img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    position: absolute;
+    top: 40%;
+}
+.social{
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+}
+.social a{
+    text-decoration: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.social a:hover{
+    transform: scale(1.20);
+    color: #9900ff;
+}
+.social i{
+    transition: 0.5s;
+}
+.social i:hover{
+    color: #9900ff;
+}
+.lorem{
+    text-align: center;
+}
+
+.container4{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+.students{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+.students-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+.child img{
+    border: 1px solid #9900ff;
+    border-radius: 10px;
+    transition: 0.5s;
+    width: 80%;
+    height: auto;
+
+}
+.child{
+    position: relative;
+}
+.child:hover img {
+    background-color: #333;
+    filter: blur(10px);
+}
+
+.child:hover::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.doxna:hover::after{
+    content: "This is Nikoloz Dokhnadze, one of the best students in my crew. Tap to see GitHub";
+}
+.goisa:hover::after{
+    content: "This is Demetre Goisashvili, one of the best students in my crew. Tap to see GitHub";
+}
+.dati:hover::after{
+    content: "This is Dati Kuknishvili, one of the best students in my crew. Tap to see GitHub";
+}
+.vako:hover::after{
+    content: "This is Vako Sisauri, one of the best students in my crew. Tap to see GitHub";
+}
+.nika:hover::after{
+    content: "This is Nika Edisherashvili, one of the best students in my crew. Tap to see GitHub";
+}
+.lejava:hover::after{
+    content: "This is Andria Lezhava, one of the best students in my crew. Tap to see GitHub";
+}
+@media screen and (max-width:767px){
+    .kakali{
+        gap: 20px;
+    }
+    .students-photo{
+        gap:20px;
+    }
+    .child img{
+        width: 100%;
+    }
+}
+
+.fifth-div {
+    padding-top: 100px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillbox {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #9900ff;
+    border-radius: 5px;
+}
+
+.skillbox p {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.skillbox p:nth-child(2) {
+    float: right;
+    position: relative;
+    top: -25px;
+}
+
+.skill {
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #9900ff;
+    border-radius: 2px;
+}
+
+.skill_level {
+    background: #9900ff;
+    height: 10px;
+}
+
+@media (max-width: 768px) {
+    .skillbox p:nth-child(2) {
+        float: none;
+        position: static;
+        top: 0;
+    }
+}
+.login-box {
+    text-align: center;
+    width: 100%; 
+    max-width: 500px; 
+    margin: auto; 
+    padding: 0 20px;
+    background-color: rgb(32, 32, 32);
+}    
+
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+    background-color: rgb(32, 32, 32);
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px; 
+    background: transparent;
+    border: 2px solid #9900ff;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 20px;
+    transition: .5s ease;
+    background-color: rgb(32, 32, 32);
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+    background-color: rgb(32, 32, 32);
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    background-color: rgb(32, 32, 32);
+    top: 1px;
+    font-size: .8em;
+    padding: 0 6px;
+}
+.input-box:focus ~ label,
+.input-box:valid ~ label {
+    background-color: rgb(32, 32, 32);  
+}
+.input-box input:focus{
+    background-color: rgb(32, 32, 32);  
+    color: #fff;
+ 
+}
+.form-btn{
+    background-color: #9900ff;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.form-btn:hover {
+    transform: scale(1.07);
+}
+footer {
+    font-size: 16px;
+    width: 100%;
+}
+
+.footer {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer a:hover {
+    color: #ccc;
+}
+
+.footer-social ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-copyright, .footer-phone {
+    margin-top: 10px;
+}
+
+.footer-copyright p, .footer-phone p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-social ul {
+        justify-content: center !important;
+    }
+    .footer-social ul li {
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #9900ff;
+    border-radius: 6px;
+    transition: 0.5s;
+} 
+::-webkit-scrollbar-thumb:hover{
+    background-color: #9900ff;
+}
+@media (max-width: 575px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+}
+body{
+    overflow-x: hidden;
+}
+.list-unstyled{
+    position: absolute;
+    left: 180px;
+}
+.text{
+    color: #9900ff;
+}
