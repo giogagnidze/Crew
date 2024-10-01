@@ -37,7 +37,7 @@ function Header(){
                         </li>
                     </ul>
                 </div>
-            </div>  {/* This closing div tag was missing */}
+            </div>  
         </header>
     );
 }
